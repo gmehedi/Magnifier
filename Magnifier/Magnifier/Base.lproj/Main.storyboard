@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Magnifier" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mwg-Si-RJK">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="p3" translatesAutoresizingMaskIntoConstraints="NO" id="n1h-gN-Oix">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i1o-Dj-0CF">
+                                        <rect key="frame" x="294" y="0.0" width="120" height="120"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="1P3-gk-Aag"/>
+                                            <constraint firstAttribute="width" secondItem="i1o-Dj-0CF" secondAttribute="height" multiplier="1:1" id="FaL-QC-qOS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="n1h-gN-Oix" secondAttribute="trailing" id="Niw-b9-lBl"/>
+                                    <constraint firstAttribute="trailing" secondItem="i1o-Dj-0CF" secondAttribute="trailing" id="aZa-Jr-D4I"/>
+                                    <constraint firstAttribute="bottom" secondItem="n1h-gN-Oix" secondAttribute="bottom" id="js8-sR-A4v"/>
+                                    <constraint firstItem="n1h-gN-Oix" firstAttribute="leading" secondItem="mwg-Si-RJK" secondAttribute="leading" id="jtD-zQ-wvh"/>
+                                    <constraint firstItem="n1h-gN-Oix" firstAttribute="top" secondItem="mwg-Si-RJK" secondAttribute="top" id="nk4-AP-I8t"/>
+                                    <constraint firstItem="i1o-Dj-0CF" firstAttribute="top" secondItem="mwg-Si-RJK" secondAttribute="top" id="xBu-6C-6qW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mwg-Si-RJK" secondAttribute="trailing" id="9cI-ny-Ocy"/>
+                            <constraint firstItem="mwg-Si-RJK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UEP-Oo-23L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mwg-Si-RJK" secondAttribute="bottom" id="g2l-e7-UpJ"/>
+                            <constraint firstItem="mwg-Si-RJK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nG2-83-0YD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="glassView" destination="mwg-Si-RJK" id="Tul-OF-NiF"/>
+                        <outlet property="mView" destination="i1o-Dj-0CF" id="XHJ-lr-Guy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-141" y="-23"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="p3" width="509" height="339"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
